@@ -1,7 +1,7 @@
 /*
-________________________
+______________________
 initialize
-________________________
+______________________
 */
 *,
 ::after,
@@ -12,9 +12,9 @@ ________________________
 }
 
 /*
-________________________
+______________________
 Font
-________________________
+______________________
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap');
@@ -23,9 +23,9 @@ html {
 } 
 
 /*
-________________________
+______________________
 CSS Variables
-________________________
+______________________
 */
 
 :root {
@@ -54,9 +54,9 @@ ________________________
 }
 
 /*
-________________________
+______________________
 General settings
-________________________
+______________________
 */
 
 body {
@@ -111,9 +111,9 @@ ul {
 }
 
 /*
-________________________
+______________________
 Buttons
-________________________
+______________________
 */
 
 .btn {
@@ -134,17 +134,17 @@ ________________________
 }
 
 /*
-________________________
+______________________
 Navbar
-________________________
+______________________
 */
 
 
 
 /*
-________________________
+______________________
 Positions
-________________________
+______________________
 */
 
 .container {
@@ -153,15 +153,32 @@ ________________________
     border: 1px solid black;
     margin-left: auto;
     margin-right: auto;
+   /* position:static;*/
+ /*  position:relative;*/
 }
 
 .item {
     height: 150px;
     width: 150px;
+
+
 }
 
 .item1{
     background-color: rgb(255, 190, 225);
+   /* position:relative;
+    top: 50px;
+    left: 50px;*/
+  /*  position:absolute;
+    top: 20px;
+    left: 20px;*/
+  /*  position: fixed;*/
+ /* position: sticky;*/
+ /*   position: relative; /* Assurez-vous d'utiliser position: relative; */
+  /*  top: 50px; /* Position verticale par rapport à la position initiale */
+   /* bottom: 20px; /* Cela est généralement utilisé en combinaison avec position: absolute; */
+   /* right: 20px; /* Position horizontale par rapport à la position initiale */
+    /*left: 60px; */
 }
 
 .item2{
@@ -169,9 +186,9 @@ ________________________
 }
 
 /*
-________________________
+______________________
 Units
-________________________
+______________________
 */
 .box__container {
     height: auto;
@@ -190,12 +207,23 @@ ________________________
     margin: 10px;
     font-size: 25px;
 }
-
+/*.box percent
+{width: 50%;
+}
+.box pixels
+{ width:
+200px;}*/
+.box vw
+/*{ width:
+50vw;
+}
+.box vh
+{ height:20vh;}*/
 
 /*
-________________________
+______________________
 Flex
-________________________
+______________________
 */
 .flex__container {
     display: flex;
@@ -204,9 +232,9 @@ ________________________
 }
 
 /*
-________________________
+______________________
 Media Queries
-________________________
+______________________
 */
 .media__container{
     height: 20vh;
@@ -231,3 +259,39 @@ ________________________
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+
+/*html{font-size: 20px;}
+.font__1em{
+font-size: 3em;
+}
+.font__1rem{
+font-size: 3rem;
+}
+.font__200percent 
+{font-size:300%}
+.font_container
+{height: auto;
+margin: 10px;
+font-size: 25px;
+}
+.font__1em  {
+    font-size: 5em;
+    }
+    .font {
+    font-size: 2rem;
+    }
+    .font
+    { font-size:200%;}*/
+.media__container{background-color:  var(--primary-900);}
+@media (min-width:600px){
+    .media__container{background-color:  var(--primary-200);}
+}
+@media (min-width:768px){
+    .media__container{background-color:  var(--primary-400);}
+}
+@media(min-width:992px){
+    .media__container{background-color: var(--primary-600);}
+}
+@media(min-width:1200px){
+    .media__container{background-color: var(--primary-800);}
+}
